@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <div class="allWrap">
+      <form id="login-form" class="hidden">
+        <div><i class="fas fa-user-circle"></i></div>
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <button><i class="fas fa-power-off"></i></button>
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <h2 id="clock" class="hidden">00:00:00</h2>
+      <form id="todo-form" class="hidden">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter."
+          required
+        />
+      </form>
+      <ul id="todo-list" class="hidden"></ul>
+    </div>
+    <h2 id="calendar">0000.00.00</h2>
+    <div id="weather">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/whather.js"></script>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+      integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

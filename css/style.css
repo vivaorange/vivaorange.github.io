@@ -1,0 +1,180 @@
+/* 폰트 - 시계 */
+@font-face {
+  font-family: "ds-digitalbold";
+  src: url("../fonts/ds-digib-webfont.eot");
+  src: url("../fonts/ds-digib-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ds-digib-webfont.woff2") format("woff2"),
+    url("../fonts/ds-digib-webfont.woff") format("woff"),
+    url("../fonts/ds-digib-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 폰트 - 명언 */
+@font-face {
+  font-family: "InkLipquid";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.hidden {
+  display: none;
+}
+body {
+  color: #fff;
+}
+img {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#greeting,
+#clock,
+#todo-form,
+#todo-list {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+.allWrap {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#login-form {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+#login-form div {
+  font-size: 70px;
+  margin-bottom: 25px;
+}
+#login-form input {
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+}
+#login-form button {
+  color: #fff;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+#greeting {
+  animation: fadeInDown 0.5s ease-out forwards;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+#todo-form input {
+  width: 400px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+#todo-list {
+  width: 420px;
+  margin: 25px auto;
+}
+#clock {
+  font-family: "ds-digitalbold";
+  font-size: 100px;
+  margin-bottom: 25px;
+}
+#calendar {
+  position: fixed;
+  left: 15px;
+  top: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+#todo-list li {
+  text-align: left;
+  position: relative;
+  line-height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 7px;
+  padding: 0 10px;
+}
+#todo-list li:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transition: background 0.5s;
+}
+#todo-list li button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: none;
+  color: #fff;
+  font-size: 20px;
+  display: block;
+}
+#weather {
+  position: fixed;
+  right: 15px;
+  top: 10px;
+  line-height: 20px;
+  font-size: 15px;
+}
+#weather span {
+  text-align: right;
+}
+#weather span:first-child {
+  font-size: 20px;
+}
+/* #weather span:nth-child(2) {
+  margin: 0 -5px 0 0;
+  white-space: nowrap;
+}
+#weather span:last-child {
+  display: block;
+} */
+#quote {
+  font-family: "InkLipquid";
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+}
+#quote span:first-child::after {
+  content: "-";
+  display: inline-block;
+  margin: 0 10px;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
